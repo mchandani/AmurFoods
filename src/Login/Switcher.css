@@ -1,0 +1,92 @@
+.selectedbtn{
+    color: black;
+    background: transparent;
+    border: none;
+    text-decoration: red underline;
+    font-size: 30px;
+    outline: none !important ;
+}
+.unselectedbtn{
+    color: black;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    outline: none !important;
+}
+.labelxl{
+    font-weight: 400;
+    font-size: 11px;
+    
+}
+.mTop{
+    margin-top: 25px !important;
+}
+.inputxl{
+    width: 100%;
+    padding: 4px 0px 4px 30px;
+}
+.enterbtn{
+    width: 110px;
+    color: blue;
+    background: transparent;
+    border: 1px solid blue;
+    margin-top: 10px;
+    padding: 3px 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    outline: none !important;
+}
+.enterbtn:hover{
+    color: white;
+    background-color: blue;
+}
+.forgotpass{
+    margin-top: 40px;
+    text-align: center;
+}
+.imgxxl{
+    height: 60vh;
+}
+.formPos{
+    margin-left: 140px;
+    width: 61% !important;
+}
+.eyeIcon{
+    margin-left: -40px !important;
+    line-height: 30px;
+    position: absolute;
+}
+.inputxl:focus{
+   outline-color: rgb(0, 140, 255);
+   outline-width: 0.5px;
+    transition-delay: 0.1s;
+    transition: ease-in-out !important
+}
+.textxl{
+    margin-left: 60px;
+    font-size: 45px;
+}
+@media (max-width:770px){
+    .container-fluid {
+        width: 100% !important;
+        
+    }
+    .formPos{
+        margin-left: 5px;
+        width: 100% !important;
+    }
+    .imgxxl{
+        width: inherit;
+        height: auto
+    }
+    .textxl{
+        margin-left: 0px !important;
+        font-size: 35px;
+    }
+    .inputxl{
+        width: 95% !important;
+    }
+    .col{
+        padding:initial !important;
+    }
+}

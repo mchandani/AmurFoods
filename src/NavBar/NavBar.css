@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    letter-spacing: 4px;
+    color: #11905c;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 0px !important;
+    width: 40%;
+}
+.nav li{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white;
+    min-height: 8vh;
+    font-family:  Montserrat,sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+    position: fixed;
+    width: 100%;;
+    z-index: 3;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%
+}
+.nav-links button{
+    color: black ;
+    outline: none !important;
+    letter-spacing: .15rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+}
+
+.nav-links button:hover{
+    text-decoration: none !important;
+    color: rgb(226,226,226) !important;
+    transition: all 0.3s ; 
+}
+.dl,ol,ul{
+    margin: 0px !important;
+}
+.nav-links li{
+    list-style-type: none;
+}
+.burger{
+    display: none;
+    
+}
+.burger div{
+    background-color: rgb(226,226,226) !important;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+    transition: all 0.3s ease;
+}
+.toggle .line2{
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+    transition: all 0.3s ease;
+}
+.goog-te-gadget{
+    top:1vh;
+    position: relative;
+}
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px){
+    #root{
+        overflow-x: hidden !important;
+    }
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 8vh;
+        right: 0px;
+        height: 50vh;
+        background-color: white;
+        align-items: center;
+        flex-direction: column; 
+        width: 100%;   
+    }
+    
+    .logo{
+        font-size:15px;
+        letter-spacing: 2px;
+        width: 65%;
+    }
+    .imgxl{
+        height: 100%;
+    }
+    .nav-links li{
+        animation: navLinkFade 0.8s ease;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-active{
+        
+        transform: translateY(0%);
+       display: flex ;
+       z-index: 50 !important;
+       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+    }
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateY(0px);
+        }
+        to{
+            opacity: 1 !important;
+            transform: translateY(0px);
+        }
+    }
+}

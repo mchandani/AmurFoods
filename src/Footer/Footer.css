@@ -1,0 +1,50 @@
+#root{
+    font-family: "Poppins", Arial, sans-serif !important;
+}
+.footer-section{
+    padding: 7em 0;
+    border-top: 1px solid #80808057;
+}
+.h2{
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+    text-align: center;
+}
+.mb-5{
+    margin-bottom: 2.5rem !important;
+}
+.ft-btn{
+    font-size: 14px;
+    background: transparent;
+    outline: none !important;
+    border: none;
+}
+.pb-2{
+    padding-bottom: 0.5rem !important;
+}
+.pt-2{
+    padding-top: 0.5rem !important;
+}
+.ft-icon-bg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.d-inline{
+    display: inline !important;
+}
+@media screen and (max-width:768px){
+    .h2{
+        text-align: left;
+    }
+    .space-evenly{
+        justify-content: start;
+    }
+    .ft-btn{
+        text-align: left;
+    }
+    }

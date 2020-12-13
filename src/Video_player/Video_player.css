@@ -1,0 +1,14 @@
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+    top: 6.5vh;
+    height: 85%;
+    width: 100%;
+  }
+   
+  .react-player {
+    position: absolute;
+    background-position: unset;
+    top: 0;
+    left: 0;
+  }
